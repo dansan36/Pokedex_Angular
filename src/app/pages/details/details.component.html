@@ -23,16 +23,19 @@
               <strong>
                 {{ value.base_stat }}
               </strong>
-              <a [routerLink]="['']" class="btn btn_secondary"> Voltar </a>
+             
             </li>
           </ol>
         </section>
+        <a [routerLink]="['']" class="btn btn_secondary">
+            Voltar
+          </a>
       </article>
     </section>
   </ng-template>
   <img
 
-  src="assets/error.png"
+  src="../../../assets/error.png"
   alt="Error ao exibir imagem"
   widtg="100%"
   *ngIf="apiError"
